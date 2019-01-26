@@ -15,11 +15,11 @@ describe('The Question List', () => {
         console.log("Before all!");
     });
 
-    it('should display a list of items', () => {
+    it.only('should display a list of items', () => {
         expect(40 + 2).toEqual(42);
     });
 
-    it('should be the meaning of life', () => {
-        expect(40 + 2).toEqual(42);
+    it.skip('should be the meaning of life', () => {
+        expect(41 + 2).toEqual(42);
     });
 });
