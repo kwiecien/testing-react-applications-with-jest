@@ -1,7 +1,15 @@
 {
-  "presets":[
+  "presets": [
     "@babel/react",
     "@babel/env"
   ],
-  "plugins": ["transform-object-rest-spread"]
+  "plugins": [
+    "transform-object-rest-spread",
+    [
+      "@babel/transform-runtime",
+      {
+        "regenerator": true
+      }
+    ]
+  ]
 }
